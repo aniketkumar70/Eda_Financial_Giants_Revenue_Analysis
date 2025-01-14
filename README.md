@@ -13,8 +13,7 @@ This project conducts an in-depth exploratory data analysis (EDA) of the top fin
    4. Distribution of Revenue, Net Income, and Total Assets
    5. Industry-Wise Aggregates
    6. Correlation Matrix
-5. [Conclusion](#conclusion)
-6. [Future Work](#future-work)
+
 
 ## Project Overview
 
@@ -57,13 +56,3 @@ Key steps in the analysis include:
 2. **Data Exploration**: Investigating the structure, types, and summary statistics of the dataset.
 3. **Data Visualization**: Creating a range of plots, such as bar charts, histograms, and correlation matrices.
 4. **Data Aggregation**: Summarizing data by industry, revenue, net income, and assets.
-
-## Data Analysis and Visualizations
-
-### 1. Top 10 Companies by Revenue (USD Million)
-
-The top 10 companies by revenue are visualized using a bar plot.
-
-```python
-top_revenue = df.nlargest(10, 'Revenue in (USD Million)')
-sns.barplot(x=top_revenue['Revenue in (USD Million)'], y=top_revenue['Company'], palette='Blues_r')
